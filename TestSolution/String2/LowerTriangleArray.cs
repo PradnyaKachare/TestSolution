@@ -15,8 +15,7 @@ namespace TestSolution.String2
     {
 		// method to form lower
 		// triangular matrix
-		static void lower(int[,] matrix,
-						int row, int col)
+		static void lower(int[,] matrix,int row, int col)
 		{
 			int i, j;
 			for (i = 0; i < row; i++)
@@ -36,8 +35,7 @@ namespace TestSolution.String2
 
 		// Method to form upper
 		// triangular matrix
-		static void upper(int[,] matrix,
-						int row, int col)
+		static void upper(int[,] matrix,int row, int col)
 		{
 			int i, j;
 			for (i = 0; i < row; i++)

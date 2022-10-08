@@ -13,24 +13,23 @@ namespace TestSolution.String2
 		public static void Minelement(int no_of_col, int[][] arr)
 
 		{
-			int i = 0;
+			int j=0 , i=1;
 
-			// Initialize min to 0 at beginning
-			// of finding min element of each row
+			// Initialize min to 0 at beginning	// of finding min element of each row
 			int min = 0;
 			int[] result = new int[no_of_col];
-			while (i < no_of_col)
+			while (j < no_of_col)
 			{
-				for (int j = 0;	j < arr[i].Length; j++)
+				for ( j = 0;	j < arr.Length; j++)
 				{
-					if (arr[i][j] < min)
+					if (arr[j][i] < min)
 					{
-						min = arr[i][j];
+						min = arr[j][i];
 					}
 				}
-				result[i] = min;
+				result[j] = min;
 				min = 0;
-				i++;
+				j++;
 
 			}
 			printArray(result);
@@ -52,14 +51,18 @@ namespace TestSolution.String2
 		{
 			int[][] arr = new int[][]
 			{
-				new int[] {3, 4, 1, 8},
+				new int[]{ 22, 31, 9},
+				new int[] { 12, 5,16},
+				new int[] { 34, 42, 2} 
+			};
+				/*new int[] {3, 4, 1, 8},
 				new int[] {1, 4, 9, 11},
 				new int[] {76, 34, 21, 1},
 		        new int[] {2, 1, 4, 5}
-			};
+			};*/
 
 			// Calling the function
-			Minelement(4, arr);
+			Minelement(3, arr);
 		}
 	}
 

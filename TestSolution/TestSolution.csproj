@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <startupobject>TestSolution.arraymissingNo</startupobject>
+	  <startupobject>TestSolution.String2.MinimumInColomn</startupobject>
   </PropertyGroup>
 
 </Project>

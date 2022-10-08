@@ -11,23 +11,22 @@ namespace TestSolution.String2
 
 	class FrequencyOfDigit
 	{
-		// function to find frequency
-		// of digit in a number
-		static int frequencyDigits(int n, int d)
+		// function to find frequency 		// of digit in a number
+		static int frequencyDigits(long n, int d)
 		{
-			// Counter variable to
-			// store the frequency
+			// Counter variable to			// store the frequency
 			int c = 0;
 
-			// iterate till number
-			// reduces to zero
+			// iterate till number // reduces to zero
 			while (n > 0)
 			{
 				// check for equality
 				if (n % 10 == d)
 					c++;
+               
 				// reduce the number
 				n = n / 10;
+				
 			}
 			return c;
 		}
@@ -37,10 +36,10 @@ namespace TestSolution.String2
 		{
 
 			// input number N
-			int N = 1122322;
+			long N = 7387360141;
 
 			// input digit D
-			int D = 2;
+			int D = 7;
 
 			Console.WriteLine(frequencyDigits(N, D));
 

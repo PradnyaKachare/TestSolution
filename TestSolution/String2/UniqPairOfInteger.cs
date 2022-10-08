@@ -32,8 +32,8 @@ namespace TestSolution.String2
 		}
 		public static void Main()
 		{
-			int[] A = { 0, -1, 2, -3, 1 };
-			int x = -2;
+			int[] A = { 2, 4, 3, 5, 6, -2, 4, 7, 8, 9};
+			int x = 7;
 			int size = A.Length;
 			if (chkPair(A, size, x))
 			{

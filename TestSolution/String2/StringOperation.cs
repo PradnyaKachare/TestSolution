@@ -38,7 +38,7 @@ namespace TestSolution.String2
 		public static void Main(String[] args)
 		{
 			String text = "ATTACKATONCE";
-			int s = 4;
+			int s = 2;
 			Console.WriteLine("Text : " + text);
 			Console.WriteLine("Shift : " + s);
 			Console.WriteLine("Cipher: " + encrypt(text, s));
